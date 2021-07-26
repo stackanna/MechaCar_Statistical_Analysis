@@ -1,47 +1,44 @@
 # MechaCar_Statistical_Analysis
 
-After you’ve completed the technical analysis for each deliverable, provide a short summary of the results in the README.md of the analysis. For the final deliverable, you’ll write up a short description of the study design for additional statistical analysis. In the written summaries, we would like you to think critically about your analysis, not demonstrate mastery of automotive manufacturing.
+Click [HERE](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/cb14c06d03d53a0e271a796dd259fc666dc7aeda/MechaCarChallenege.RScript.R) to view [Mecha Car Statistical Analysis](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/cb14c06d03d53a0e271a796dd259fc666dc7aeda/MechaCarChallenege.RScript.R)
 
-The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. Using your knowledge of R, you’ll design a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. Then, you’ll write a short interpretation of the multiple linear regression results in the README.md.
+# Resources Used: R Studio & Visual Studio Code
 
-Create a new RScript by going to the File menu. Select "New File," followed by "RScript," or you can click the icon in the top-left corner of the RStudio window. Note that the icon looks like a white square with a plus sign in the top left corner.
-Use the library() function to load the dplyr package.
-Import and read in the MechaCar_mpg.csv file as a dataframe.
-Perform linear regression using the lm() function. In the lm() function, pass in all six variables (i.e., columns), and add the dataframe you created in Step 4 as the data parameter.
-Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
-Save your MechaCarChallenge.RScript file to your GitHub repository.
-Written Summary
+# Summary Of Analysis
 
-In your README, create a subheading, ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+We are reviewing the production data for insights that may help the manufacturing team of the newest prototype for a car company, AutosRUs'. We are assisting Jeremy & the data analytics team by performing multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes. Collecting a summary of statistics on the PSI of the suspension coils from the manufacturing lots. Running t-tests to determine if the manufacturing lots are statistically different from the mean population. 
 
+
+
+
+## Linear Regression to Predict MPG
+Output from the linear regression:
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/cb14c06d03d53a0e271a796dd259fc666dc7aeda/Vehicle%20MPG%20Statistics.png)
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
+- Vehicle length and & Ground Clearance are most likely to provide a non-random amount of variance to the mpg values in the dataset. Overall, they are will have the most impact on the MPG of the newest prototype, Mechacar. 
+
 Is the slope of the linear model considered to be zero? Why or why not?
+
+- The slope of the linear model is not considered to be zero.
+
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-Deliverable 1 Requirements
 
-You will earn a perfect score for Deliverable 1 by completing all requirements below:
+- This linear modely does predict mpg of MechaCar prototypes effectively. Our R-Square value determines the variability is at around 71%. Meaning its accuracy is above 70%.
 
-The MechaCar_mpg.csv file is imported and read into a dataframe (5 pt)
-An RScript is written for a linear regression model to be performed on all six variables (10 pt)
-An RScript is written to create the statistical summary of the linear regression model with the intended p-values (10 pt)
-There is a summary that addresses all three questions (5 pt)
-Deliverable 2: Create Visualizations for the Trip Analysis (30 points)
-Deliverable 2 Instructions
+# Summary on Suspension Coil
 
-The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using your knowledge of R, you’ll create a summary statistics table to show:
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
-The suspension coil’s PSI continuous variable across all manufacturing lots
-The following PSI metrics for each lot: mean, median, variance, and standard deviation.
-Then, in the README.md, you’ll briefly detail and interpret the suspension coil summary statistics.
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/cb14c06d03d53a0e271a796dd259fc666dc7aeda/Suspension%20Summary.png)
 
-In your README, create a subheading ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/cb14c06d03d53a0e271a796dd259fc666dc7aeda/Suspension%20Manufacturing%20Lot.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-Deliverable 2 Requirements
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.The current manufacturing data does not meet this design specification for all manufacturing lots in total because they exceeded the design specifications of 100 lbs per sq inch. 
+The total summary variance of 62.3 lbs per square inch which meets the design specifications for MechaCar.
 
-You will earn a perfect score for Deliverable 2 by completing all requirements below:
 
-The Suspension_Coil.csv file is imported and read into a dataframe (5 pt)
+
 An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots (10 pt)
 An RScript is written to create a lot summary dataframe that has the mean, median, variance, and standard deviation for each manufacturing lot (10 pt)
 There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually (5 pt)
