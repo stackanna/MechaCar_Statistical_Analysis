@@ -37,16 +37,19 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.The current manufacturing data does not meet this design specification for all manufacturing lots in total because they exceeded the design specifications of 100 lbs per sq inch. 
 The total summary variance of 62.3 lbs per square inch which meets the design specifications for MechaCar.
 
+## T-Tests on Suspension Coils
+
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/d12ae053b679fc1c01397b6ec7c39ba8d9aa56c7/T-Test.png)
+
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/d12ae053b679fc1c01397b6ec7c39ba8d9aa56c7/lot1%20ttest.png)
+
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/d12ae053b679fc1c01397b6ec7c39ba8d9aa56c7/Lot%202%20T-Test.png)
+
+![alt text](https://github.com/stackanna/MechaCar_Statistical_Analysis/blob/d12ae053b679fc1c01397b6ec7c39ba8d9aa56c7/lot%203%20ttest.png)
 
 
-An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots (10 pt)
-An RScript is written to create a lot summary dataframe that has the mean, median, variance, and standard deviation for each manufacturing lot (10 pt)
-There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually (5 pt)
-Deliverable 3: T-Tests on Suspension Coils (20 points)
-Deliverable 3 Instructions
+Using our knowledge of R, we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch. All of the t-tests we performed proved that there was no statistical difference from the population mean of 1500. The p-values are not statistically significant enough to reject the null hypothesis. 
 
-Using your knowledge of R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
-In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
 Deliverable 3 Requirements
 You will earn a perfect score for Deliverable 3 by completing all requirements below:
