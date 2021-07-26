@@ -50,46 +50,23 @@ The total summary variance of 62.3 lbs per square inch which meets the design sp
 
 Using our knowledge of R, we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch. All of the t-tests we performed proved that there was no statistical difference from the population mean of 1500. The p-values are not statistically significant enough to reject the null hypothesis. 
 
+## Study Design: MechaCar vs Competition
 
-Deliverable 3 Requirements
-You will earn a perfect score for Deliverable 3 by completing all requirements below:
+How will the MechaCar will perform against the competition? In your study design, analyzing critically about what metrics would be of interest to a consumer: such as, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. 
 
-An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population (5 pt)
-An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population (10 pt)
-There is a summary of the t-test results across all manufacturing lots and for each lot (5 pt)
-Deliverable 4: Design a Study Comparing the MechaCar to the Competition (20 points)
-Deliverable 4 Instructions
-
-Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
-
-Follow the instructions below to complete Deliverable 4.
-
-In your README, create a subheading ## Study Design: MechaCar vs Competition.
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
 What metric or metrics are you going to test?
+
+- We would test metrics like the most common issues with vehicles & the costs to repair them.
+
 What is the null hypothesis or alternative hypothesis?
+
+- There is a statistical difference between repairs made & cost variances of the MechCar prototype to most popular vehicles currently on the road. 
+
 What statistical test would you use to test the hypothesis? And why?
+
+- It would make most sense to run a Multiple Linear Regression & Pearsons coefficients to test our hypothesis so we can confirm if there is a statistical difference to reject or fail to reject our null hypothesises.
+
 What data is needed to run the statistical test?
 
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
+- We would need the data of the MechaCar prototpyes performance and repair costs over time compared to competitors. 
 
-The statistical study design has the following:
-A metric to be tested is mentioned (5 pt)
-A null hypothesis or an alternative hypothesis is described (5 pt)
-A statistical test is described to test the hypothesis (5 pt)
-The data for the statistical test is described (5 pt)
-Submission
-Once you’re ready to submit, make sure to check your work against the rubric to ensure you are meeting the requirements for this Challenge one final time. It’s easy to overlook items when you’re in the zone!
-
-As a reminder, the deliverables for this Challenge are as follows:
-
-Deliverable 1: Linear Regression to Predict MPG
-Deliverable 2: Summary Statistics on Suspension Coils
-Deliverable 3: T-Test on Suspension Coils
-Deliverable 4: Design a Study Comparing the MechaCar to the Competition
-Upload the following to your MechaCar_Statistical_Analysis GitHub repository:
-
-The MechaCarChallenge.RScript file.
-An updated README.md that has the written summaries for Deliverables 1, 2, and 3 and your design for a statistical study comparing vehicle performance of the MechaCars against other manufacturers’ vehicles.
-To submit your challenge assignment in Canvas, click Submit, then provide the URL of your MechaCar_Statistical_Analysis GitHub repository for grading. Comments are disabled for graded submissions in BootCampSpot. If you have questions about your feedback, please notify your instructional staff or the Student Success Manager. If you would like to resubmit your work for an improved grade, you can use the Re-Submit Assignment button to upload new links. You may resubmit up to 3 times for a total of 4 submissions.
